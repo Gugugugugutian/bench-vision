@@ -19,8 +19,10 @@ def main(args):
     model = load_model(args.model_path)
     # Create output folder if it doesn't exist
     os.makedirs(args.output_folder, exist_ok=True)
+    # Determine the file format to process based on the dataset argument
+    format = f"{args.dataset}.jsonl" if args.dataset != 'all' else '*.jsonl'
     # Process each input file
-    input_files = glob.glob(os.path.join(args.input_folder, "*.jsonl"))
+    input_files = glob.glob(os.path.join(args.input_folder, format))
     for input_file in input_files:
         print(f"\033[92m>>> Processing file: {input_file}\033[0m")
         out_path = f"{args.output_folder}/{input_file.split('/')[-1].replace('.jsonl', '_response.csv')}"
@@ -43,6 +45,7 @@ if __name__ == "__main__":
     parser.add_argument("--input_folder", type=str, default=".", help="Folder containing input files.")
     parser.add_argument("--output_folder", type=str, default="./predictions", help="Folder to save generated responses.")
     parser.add_argument("--model_path", type=str, required=True, help="Path to the Llama3 model.")
+    parser.add_argument("--dataset", type=str, default='all', required=True, help="Name of the dataset.")
     
     args = parser.parse_args()
     main(args)
