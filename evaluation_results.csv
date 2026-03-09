@@ -1,0 +1,2 @@
+file,step_score
+./predictions/Llama-3.2-11B-Vision-Instruct/realworld_qa_response.csv,0.5816993464052288

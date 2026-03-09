@@ -1,0 +1,8 @@
+*.jsonl
+images
+.vscode
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.log
