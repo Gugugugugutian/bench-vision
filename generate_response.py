@@ -36,9 +36,8 @@ def main(args):
         # Generate response using the model
         response = model.predict(input_data)
         # Save the response to the output folder
-        save_file(
-            response, out_path
-        )
+        save_file(response, out_path)
+        print(f"\033[92m>>> Response saved to: {out_path}\033[0m")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate responses using Llama3 model.")

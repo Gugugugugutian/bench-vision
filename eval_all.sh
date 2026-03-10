@@ -1,6 +1,8 @@
 model_list=(
   "Llama-3.2-11B-Vision-Instruct"
   "Llama-3.2-11B-Vision-Instruct-lavender-official"
+  "Ours-online-diffusion"
+  "Ours-distribution-1"
 )
 
 for model in "${model_list[@]}"; do

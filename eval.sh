@@ -1,4 +1,5 @@
-model_path=${1:-"../models/Llama-3.2-11B-Vision-Instruct"}
+model=${1:-"Llama-3.2-11B-Vision-Instruct"}
+model_path="../models/$model"
 dataset=${2:-"all"}
 
 if command -v nvidia-smi &> /dev/null; then
