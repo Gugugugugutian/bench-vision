@@ -4,7 +4,6 @@ model_list=(
 )
 
 for model in "${model_list[@]}"; do
-  echo "Evaluating $model on RealWorldQA..."
   model_path="../models/$model"
 
   if command -v nvidia-smi &> /dev/null; then
@@ -20,3 +19,4 @@ for model in "${model_list[@]}"; do
     --output_folder ./evaluations/$model \
     --dataset "all"
 done
+python summarize_statistics.py

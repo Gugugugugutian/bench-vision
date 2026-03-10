@@ -27,6 +27,7 @@ def evaluate(pred_folder, output_folder, dataset='all'):
         step_results, step_score = judger.judge(pred_data)
 
         model, dataset = extract_model_and_dataset(pred_file)
+
         results.append({
             "model": model,
             "dataset": dataset,
@@ -38,12 +39,16 @@ def evaluate(pred_folder, output_folder, dataset='all'):
         )
 
         os.makedirs(f"statistics/{model}", exist_ok=True)
+
+        assert len(results) == 1, f"Only 1 file should be evaluated at a time for statistics. (got {len(results)} files)"
         save_file(results, f"statistics/{model}/{dataset}.csv")
+        results = []  # reset results for next file
 
 def extract_model_and_dataset(file_path: str): 
     m = re.search(r"predictions/([^/]+)/([^/_]+_[^/_]+)", file_path)
     model = m.group(1)
-    dataset = m.group(2)
+    dataset = m.group(2).replace(".csv", "")
+    print(f"Model: {model}, Dataset: {dataset}")
     return model, dataset
 
 if __name__ == "__main__":
