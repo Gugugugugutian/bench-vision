@@ -10,7 +10,7 @@ class Llama3Judger(BaseJudger):
             return 1.0 if answer.strip().lower().startswith(solution.strip().lower()) else 0.0
         else:
             # Other types of questions, use normalized string comparison
-            return self._llama3_normalize(answer) == self._llama3_normalize(solution)
+            return 1.0 if self._llama3_normalize(answer) == self._llama3_normalize(solution) else 0.0
 
     def _llama3_normalize(self, text):
         return self._normalize_output(text, split_key="assistant\n\n")

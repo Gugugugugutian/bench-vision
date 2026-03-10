@@ -27,7 +27,8 @@ def main():
     combined_df = pd.concat(dataframes, ignore_index=True)
     output_path = "./statistics/bench_vision_summary.csv"
     combined_df.to_csv(output_path, index=False)
-    print(f"\Saved {len(combined_df)} statistics into file: {output_path}")
+
+    print(f"Saved {len(combined_df)} statistics into file: {output_path}")
 
 if __name__ == "__main__":
     main()
