@@ -3279,7 +3279,7 @@ Options:
 A. The suitcase is on the book.
 B. The suitcase is beneath the cat.
 C. The suitcase is beneath the bed.
-D. The suitcase is beneath the book.Answer the question, only output the letter of your option: ",D. The suitcase is beneath the book.,A,0.0
+D. The suitcase is beneath the book.Answer the question, only output the letter of your option: ",D. The suitcase is beneath the book.,A,1.0
 mmbench_dev00585,"Question: Which option describe the object relationship in the image correctly?
 Options:
 A. The cat is at the left side of the vase.
@@ -10825,7 +10825,7 @@ Options:
 A. The cat is on the microwave.
 B. The bed is beneath the suitcase.
 C. The car is behind the suitcase.
-D. The suitcase is beneath the bed.Answer the question, only output the letter of your option: ",D. The suitcase is beneath the bed.,B,0.0
+D. The suitcase is beneath the bed.Answer the question, only output the letter of your option: ",D. The suitcase is beneath the bed.,B,1.0
 mmbench_dev01744,"Question: Which option describe the object relationship in the image correctly?
 Options:
 A. The cat is attached to the sink.
@@ -16844,7 +16844,7 @@ Options:
 A. D
 B. A
 C. B
-D. CAnswer the question, only output the letter of your option: ",B,C,0.0
+D. CAnswer the question, only output the letter of your option: ",B,C,1.0
 mmbench_dev02624,"Question: Which can be the associated text with this image posted on twitter
 Options:
 A. happy tears of the kingdom day!! #kirby #zelda

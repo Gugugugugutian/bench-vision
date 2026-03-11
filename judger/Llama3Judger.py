@@ -14,6 +14,8 @@ class Llama3Judger(BaseJudger):
             return 1.0
         if self._match_option_letters(ans, sol):
             return 1.0
+        if self._match_option_text(ans, sol, question=question):
+            return 1.0
         if self._normalize_for_match(ans) == self._normalize_for_match(sol):
             return 1.0
         if self._match_contains(ans, sol, question=question):

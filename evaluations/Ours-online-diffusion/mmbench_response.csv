@@ -543,7 +543,7 @@ Since the distance between the magnets in Pair 2 is smaller than in Pair 1, the 
 
 Therefore, the correct answer is:
 
-**A. The magnitude of the magnetic force is smaller in Pair 1.**",B,0.0
+**A. The magnitude of the magnetic force is smaller in Pair 1.**",B,1.0
 mmbench_dev00101,"Question: Think about the magnetic force between the magnets in each pair. Which of the following statements is true?
 Options:
 A. The magnetic force is stronger in Pair 1.
@@ -936,7 +936,7 @@ mmbench_dev00160,"Question: Are the two pens the same size in the picture?
 Options:
 A. same
 B. Not the same
-C. Can't judgeAnswer the question, only output the letter of your option: ",The two pens in the picture are not the same size.,B,0.0
+C. Can't judgeAnswer the question, only output the letter of your option: ",The two pens in the picture are not the same size.,B,1.0
 mmbench_dev00161,"Question: Are the candies in the two jars in the picture the same color?
 Options:
 A. same
@@ -1072,12 +1072,12 @@ mmbench_dev00179,"Question: In this comparison picture, are the left and right m
 Options:
 A. same
 B. Not the same
-C. Can't judgeAnswer the question, only output the letter of your option: ",The left and right modules are the same color.,A,0.0
+C. Can't judgeAnswer the question, only output the letter of your option: ",The left and right modules are the same color.,A,1.0
 mmbench_dev00180,"Question: In this comparison picture, are the left and right modules the same shape?
 Options:
 A. same
 B. Not the same
-C. Can't judgeAnswer the question, only output the letter of your option: ",The left and right modules are the same shape.,A,0.0
+C. Can't judgeAnswer the question, only output the letter of your option: ",The left and right modules are the same shape.,A,1.0
 mmbench_dev00181,"Question: In this comparison picture, are the left and right modules the same shape?
 Options:
 A. same
@@ -2633,7 +2633,7 @@ Options:
 A. watercolor
 B. photography
 C. vector art
-D. pencilAnswer the question, only output the letter of your option: ",The art style evident in this image is vector art.,C,0.0
+D. pencilAnswer the question, only output the letter of your option: ",The art style evident in this image is vector art.,C,1.0
 mmbench_dev00424,"Question: Identify the art style of this image.
 Options:
 A. oil paint
@@ -2735,7 +2735,7 @@ Options:
 A. red
 B. cyan
 C. purple
-D. brownAnswer the question, only output the letter of your option: ",The other small shiny thing that is the same shape as the tiny yellow shiny object is cyan.,B,0.0
+D. brownAnswer the question, only output the letter of your option: ",The other small shiny thing that is the same shape as the tiny yellow shiny object is cyan.,B,1.0
 mmbench_dev00441,"Question: The tiny shiny cylinder has what color?
 Options:
 A. red
@@ -6379,7 +6379,7 @@ from collections import Counter
 result = Counter('strawberry')
 print(result)
 
-This code uses the Counter class from the collections module to count the frequency of each character in the string'strawberry'. The result will be a dictionary where the keys are the characters and the values are their respective counts.",C,0.0
+This code uses the Counter class from the collections module to count the frequency of each character in the string'strawberry'. The result will be a dictionary where the keys are the characters and the values are their respective counts.",C,1.0
 mmbench_dev00947,"Question: Which Python code can generate the content of the image?
 Options:
 A. count = 0
@@ -6662,7 +6662,7 @@ print list[0]
 print list[1:3] 
 print list[2:] 
 print tinylist * 2 
-print list + tinylist",D,0.0
+print list + tinylist",D,1.0
 mmbench_dev00955,"Question: Which Python code can generate the content of the image?
 Options:
 A. dict = {}
@@ -8715,7 +8715,7 @@ Since the distance between the magnets is the same in both pairs, the magnitude 
 
 Therefore, the correct answer is:
 
-*Answer*: C",A,0.0
+*Answer*: C",A,1.0
 mmbench_dev01262,"Question: Which property do these three objects have in common?
 Options:
 A. flexible
@@ -9273,7 +9273,7 @@ mmbench_dev01344,"Question: In this comparison picture, are the left and right m
 Options:
 A. Can't judge
 B. same
-C. Not the sameAnswer the question, only output the letter of your option: ",The left and right modules are the same shape.,B,0.0
+C. Not the sameAnswer the question, only output the letter of your option: ",The left and right modules are the same shape.,B,1.0
 mmbench_dev01345,"Question: In this comparison picture, are the left and right modules the same shape?
 Options:
 A. Can't judge
@@ -9294,7 +9294,7 @@ The modules are not the same shape, but they have the same design.
 
 The modules are not the same, but they have the same design.
 
-**Answer:** A. Can't judge",B,0.0
+**Answer:** A. Can't judge",B,1.0
 mmbench_dev01346,"Question: In this picture, are the two lipsticks the same color?
 Options:
 A. Can't judge
@@ -11894,7 +11894,7 @@ B. A gray circle is to the left of a cyan shape.
 C. A cyan square is to the left of a gray circle.
 D. A cyan ellipse is to the right of a gray circle.Answer the question, only output the letter of your option: ","To determine the correct answer, let's analyze the image. The image shows a gray circle on the left and a cyan shape on the right. The cyan shape is a square, not an ellipse. Therefore, the correct statement is that a gray circle is to the left of a cyan square.
 
-The correct option is C.",B,0.0
+The correct option is C.",B,1.0
 mmbench_dev01759,"Question: Which of the following statements match the image?
 Options:
 A. A cyan rectangle is below a red shape.
@@ -13784,13 +13784,13 @@ Options:
 A. photo
 B. medical CT image
 C. 8-bit
-D. digital artAnswer the question, only output the letter of your option: ",The image is a medical CT image.,B,0.0
+D. digital artAnswer the question, only output the letter of your option: ",The image is a medical CT image.,B,1.0
 mmbench_dev02073,"Question: Which category does this image belong to?
 Options:
 A. photo
 B. medical CT image
 C. 8-bit
-D. digital artAnswer the question, only output the letter of your option: ",The image is a medical CT image.,B,0.0
+D. digital artAnswer the question, only output the letter of your option: ",The image is a medical CT image.,B,1.0
 mmbench_dev02074,"Question: what style is depicted in this image?
 Options:
 A. dadaism
@@ -13822,7 +13822,7 @@ Options:
 A. dadaism
 B. impressionism
 C. post-Impressionism
-D. modernismAnswer the question, only output the letter of your option: ","The image depicts a painting with visible brushstrokes and a focus on capturing light and color, which are characteristic of Impressionist and Post-Impressionist styles. However, the style is more aligned with the emphasis on capturing light and color found in Impressionism, but with a more expressive and less realistic approach, which is more typical of Post-Impressionism. Therefore, the correct answer is C. post-Impressionism.",B,0.0
+D. modernismAnswer the question, only output the letter of your option: ","The image depicts a painting with visible brushstrokes and a focus on capturing light and color, which are characteristic of Impressionist and Post-Impressionist styles. However, the style is more aligned with the emphasis on capturing light and color found in Impressionism, but with a more expressive and less realistic approach, which is more typical of Post-Impressionism. Therefore, the correct answer is C. post-Impressionism.",B,1.0
 mmbench_dev02079,"Question: what style is depicted in this image?
 Options:
 A. dadaism
@@ -14604,7 +14604,7 @@ print(result)
 
 This code uses the Counter class from the collections module to count the frequency of each character in the string'strawberry'. The result will be a dictionary where the keys are the characters and the values are their respective counts. 
 
-The correct option is C.",D,0.0
+The correct option is C.",D,1.0
 mmbench_dev02111,"Question: Which Python code can generate the content of the image?
 Options:
 A. count = 0
@@ -15254,7 +15254,7 @@ The correct option is:
 
 A. def get_vowels(string):
 return [vowel for vowel in string if vowel in 'aeiou'] 
-print(""Vowels are:"", get_vowels('string'))",B,0.0
+print(""Vowels are:"", get_vowels('string'))",B,1.0
 mmbench_dev02130,"Question: What's the function of the demonstrated object?
 Options:
 A. Boiling water
@@ -16518,7 +16518,7 @@ Options:
 A. Symbiotic relationship
 B. Predatory relationships
 C. Competitive relationships
-D. Parasitic relationshipsAnswer the question, only output the letter of your option: ",Predatory relationships.,B,0.0
+D. Parasitic relationshipsAnswer the question, only output the letter of your option: ",Predatory relationships.,B,1.0
 mmbench_dev02326,"Question: In nature, what's the relationship between these two creatures?
 Options:
 A. Symbiotic relationship
@@ -16648,7 +16648,7 @@ In Pair 1, the opposite poles are closer together, resulting in an attractive fo
 
 Therefore, the correct answer is:
 
-**C. The magnitude of the magnetic force is smaller in Pair 2.**",B,0.0
+**C. The magnitude of the magnetic force is smaller in Pair 2.**",B,1.0
 mmbench_dev02339,"Question: Think about the magnetic force between the magnets in each pair. Which of the following statements is true?
 Options:
 A. The magnitude of the magnetic force is smaller in Pair 1.
@@ -16663,7 +16663,7 @@ Since the distance between the magnets in Pair 2 is smaller than in Pair 1, the 
 
 Therefore, the correct answer is:
 
-C. The magnitude of the magnetic force is smaller in Pair 1.",A,0.0
+C. The magnitude of the magnetic force is smaller in Pair 1.",A,1.0
 mmbench_dev02340,"Question: Think about the magnetic force between the magnets in each pair. Which of the following statements is true?
 Options:
 A. The magnetic force is stronger in Pair 2.
@@ -17040,7 +17040,7 @@ mmbench_dev02399,"Question: Are the two pens the same size in the picture?
 Options:
 A. Not the same
 B. Can't judge
-C. sameAnswer the question, only output the letter of your option: ",The two pens in the picture are not the same size.,A,0.0
+C. sameAnswer the question, only output the letter of your option: ",The two pens in the picture are not the same size.,A,1.0
 mmbench_dev02400,"Question: Are the candies in the two jars in the picture the same color?
 Options:
 A. Not the same
@@ -18474,7 +18474,7 @@ Options:
 A. D
 B. A
 C. B
-D. CAnswer the question, only output the letter of your option: ",B.,C,0.0
+D. CAnswer the question, only output the letter of your option: ",B.,C,1.0
 mmbench_dev02624,"Question: Which can be the associated text with this image posted on twitter
 Options:
 A. happy tears of the kingdom day!! #kirby #zelda
@@ -18800,7 +18800,7 @@ Options:
 A. vector art
 B. pencil
 C. watercolor
-D. photographyAnswer the question, only output the letter of your option: ",The art style evident in this image is vector art.,A,0.0
+D. photographyAnswer the question, only output the letter of your option: ",The art style evident in this image is vector art.,A,1.0
 mmbench_dev02663,"Question: Identify the art style of this image.
 Options:
 A. Baroque
@@ -21757,13 +21757,13 @@ Options:
 A. digital art
 B. photo
 C. medical CT image
-D. 8-bitAnswer the question, only output the letter of your option: ",The image is a medical CT image.,C,0.0
+D. 8-bitAnswer the question, only output the letter of your option: ",The image is a medical CT image.,C,1.0
 mmbench_dev03148,"Question: Which category does this image belong to?
 Options:
 A. digital art
 B. photo
 C. medical CT image
-D. 8-bitAnswer the question, only output the letter of your option: ",The image is a medical CT image.,C,0.0
+D. 8-bitAnswer the question, only output the letter of your option: ",The image is a medical CT image.,C,1.0
 mmbench_dev03149,"Question: what style is depicted in this image?
 Options:
 A. modernism
@@ -22516,7 +22516,7 @@ list = [""Hello"", ""world"", ""Ok"", ""Bye!""]
 combined_string = "" "".join(list)
 print(combined_string)
 
-This code will output: ""Hello world Ok Bye!""",C,0.0
+This code will output: ""Hello world Ok Bye!""",C,1.0
 mmbench_dev03185,"Question: Which Python code can generate the content of the image?
 Options:
 A. from collections import Counter
@@ -23117,7 +23117,7 @@ def get_vowels(string):
 
 print(""Vowels are:"", get_vowels('This is a string'))
 
-The final answer is: A.",C,0.0
+The final answer is: A.",C,1.0
 mmbench_dev03205,"Question: What's the function of the demonstrated object?
 Options:
 A. Water purification
@@ -23565,7 +23565,7 @@ B. Writing English and learning Hindi.
 C. Writing Hindi and learning Maths.
 D. Writing Maths and learning Hindi.Answer the question, only output the letter of your option: ","To determine what Anna should do on Tuesday, we need to look at the table provided. The table shows that on Tuesday, Anna should do writing in Hindi and learning in English.
 
-The correct option is: B. Writing English and learning Hindi.",A,0.0
+The correct option is: B. Writing English and learning Hindi.",A,1.0
 mmbench_dev03266,"Question: This picture shows the lesson plan for Mike. Can you tell me what time should Mike learn biology on Wednesday?
 Options:
 A. 13:00-14:30.
@@ -25612,7 +25612,7 @@ Options:
 A. photography
 B. vector art
 C. pencil
-D. watercolorAnswer the question, only output the letter of your option: ",The art style evident in this image is vector art.,B,0.0
+D. watercolorAnswer the question, only output the letter of your option: ",The art style evident in this image is vector art.,B,1.0
 mmbench_dev03589,"Question: Identify the art style of this image.
 Options:
 A. vector art
@@ -25726,7 +25726,7 @@ Options:
 A. green
 B. yellow
 C. cyan
-D. redAnswer the question, only output the letter of your option: ",The matte ball that is the same size as the gray metal thing is yellow.,B,0.0
+D. redAnswer the question, only output the letter of your option: ",The matte ball that is the same size as the gray metal thing is yellow.,B,1.0
 mmbench_dev03608,"Question: What is the color of the small block that is the same material as the big brown thing?
 Options:
 A. blue
@@ -28680,7 +28680,7 @@ Options:
 A. icon
 B. microscopic image
 C. abstract painting
-D. MRI imageAnswer the question, only output the letter of your option: ","The image is a microscopic view of a plant stem, showing the arrangement of cells and tissues. The image is a microscopic image.",B,0.0
+D. MRI imageAnswer the question, only output the letter of your option: ","The image is a microscopic view of a plant stem, showing the arrangement of cells and tissues. The image is a microscopic image.",B,1.0
 mmbench_dev04087,"Question: Which category does this image belong to?
 Options:
 A. icon
@@ -29357,7 +29357,7 @@ list = [""Hello"", ""world"", ""Ok"", ""Bye!""]
 combined_string = "" "".join(list)
 print(combined_string)
 
-This code will output: ""Hello world Ok Bye!""",D,0.0
+This code will output: ""Hello world Ok Bye!""",D,1.0
 mmbench_dev04111,"Question: Which Python code can generate the content of the image?
 Options:
 A. from collections import Counter
@@ -29606,7 +29606,7 @@ Explanation:
 *   `print str * 2` will print the string twice, resulting in ""Hello World!"" ""Hello World!"".
 *   `print str + ""TEST""` will concatenate the string with ""TEST"", resulting in ""Hello World!TEST"".
 
-Therefore, the correct option is B.",D,0.0
+Therefore, the correct option is B.",D,1.0
 mmbench_dev04119,"Question: Which Python code can generate the content of the image?
 Options:
 A. list = [ 'runoob', 786 , 2.23, 'john', 70.2 ]

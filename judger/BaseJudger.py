@@ -84,6 +84,30 @@ class BaseJudger:
         letters = re.findall(r"\b[A-J]\b", text)
         return letters
 
+    def _extract_options(self, question):
+        if question is None:
+            return {}
+        text = str(question)
+        options = {}
+        # Match lines like "A. text" or "1) text"
+        pattern = re.compile(r"(?m)^[ \t]*([A-J]|\d+)[\.)]\s+(.+?)\s*$")
+        for m in pattern.finditer(text):
+            key = m.group(1).strip()
+            val = m.group(2).strip()
+            if key and val:
+                options[key] = val
+        return options
+
+    def _normalize_option_key(self, text):
+        if text is None:
+            return ""
+        t = self._normalize_output(text).strip()
+        if re.fullmatch(r"[A-Ja-j]", t):
+            return t.upper()
+        if re.fullmatch(r"\d+", t):
+            return t
+        return ""
+
     def _is_yes_no(self, text):
         t = self._normalize_for_match(text)
         return t in {"yes", "no"}
@@ -160,6 +184,34 @@ class BaseJudger:
         if not sol_letters or not ans_letters:
             return False
         return sorted(set(sol_letters)) == sorted(set(ans_letters))
+
+    def _match_option_text(self, answer, solution, question):
+        options = self._extract_options(question)
+        if not options:
+            return False
+
+        def match_text(target, candidate):
+            tgt_tokens = self._remove_stopwords(self._tokenize(target))
+            cand_tokens = self._remove_stopwords(self._tokenize(candidate))
+            if not tgt_tokens or not cand_tokens:
+                return False
+            if len(tgt_tokens) <= 2:
+                return all(t in cand_tokens for t in tgt_tokens)
+            return all(t in cand_tokens for t in tgt_tokens)
+
+        sol_key = self._normalize_option_key(solution)
+        ans_key = self._normalize_option_key(answer)
+
+        if sol_key and sol_key in options:
+            return match_text(options[sol_key], answer)
+        if ans_key and ans_key in options:
+            return match_text(options[ans_key], solution)
+
+        # If solution matches an option text, accept matching key in answer
+        for key, text in options.items():
+            if match_text(text, solution) and ans_key == key:
+                return True
+        return False
 
     def _match_contains(self, answer, solution, question=None):
         ans_norm = self._normalize_for_match(answer)
