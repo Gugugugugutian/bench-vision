@@ -1,0 +1,2 @@
+model,dataset,step_score
+Ours-distribution-1,textvqa_response,0.78

@@ -4,19 +4,27 @@ class Llama3Judger(BaseJudger):
     def __init__(self):
         super().__init__()
 
-    def _compute_score(self, answer, solution):
-        if solution.strip().lower() in ['yes', 'no']:
-            # YES/NO type question
-            return 1.0 if answer.strip().lower().startswith(solution.strip().lower()) else 0.0
-        else:
-            # Other types of questions, use normalized string comparison
-            return 1.0 if self._llama3_normalize(answer) == self._llama3_normalize(solution) else 0.0
+    def _compute_score(self, question, answer, solution):
+        ans = self._llama3_normalize(answer)
+        sol = self._normalize_output(solution)
+
+        if self._match_yes_no(ans, sol):
+            return 1.0
+        if self._match_numbers(ans, sol, question=question):
+            return 1.0
+        if self._match_option_letters(ans, sol):
+            return 1.0
+        if self._normalize_for_match(ans) == self._normalize_for_match(sol):
+            return 1.0
+        if self._match_contains(ans, sol, question=question):
+            return 1.0
+        return 0.0
 
     def _llama3_normalize(self, text):
         return self._normalize_output(text, split_key="assistant\n\n")
 
     def _judge_single(self, qid, question, answer, solution):
-        score = self._compute_score(answer, solution)
+        score = self._compute_score(question, answer, solution)
         return {
             "qid": qid,
             "question": question,

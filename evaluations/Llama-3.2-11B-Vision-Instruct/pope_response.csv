@@ -652,7 +652,7 @@ pope_test00649,Is there a car in the image?,"No, there does not appear to be a c
 pope_test00650,Is there a dining table in the image?,"Yes, there is a white table with a white chair on the right side of the image.",yes,1.0
 pope_test00651,Is there a cup in the image?,"No, there does not appear to be a cup in the image.",no,1.0
 pope_test00652,Is there a chair in the image?,"Yes, there are several chairs in the image. They are green and pink and appear to be lounge chairs. They are located on a hillside overlooking a body of water.",yes,1.0
-pope_test00653,Is there a couch in the image?,"There are no couches in the image. There are several chairs and tables, but no couches.",no,0.0
+pope_test00653,Is there a couch in the image?,"There are no couches in the image. There are several chairs and tables, but no couches.",no,1.0
 pope_test00654,Is there a traffic light in the image?,"Yes, there is a traffic light in the image. It is located on the left side of the image and is green.",yes,1.0
 pope_test00655,Is there a truck in the image?,"Yes, there is a truck in the image. It is located on the right side of the street, behind the cyclists.",no,0.0
 pope_test00656,Is there a person in the image?,"Yes, there are several people in the image.",yes,1.0
@@ -750,9 +750,9 @@ pope_test00747,Is there a dining table in the image?,"Yes, there is a dining tab
 pope_test00748,Is there a vase in the image?,"Yes, there is a vase in the image. The vase is filled with flowers and is located on the table in front of the couple.",yes,1.0
 pope_test00749,Is there a potted plant in the image?,"Yes, there is a potted plant in the image. The plant is in a clear vase and has pink and white flowers.",no,0.0
 pope_test00750,Is there a toothbrush in the image?,"Yes, there is a toothbrush in the image. The child is holding the toothbrush in their right hand and appears to be brushing their teeth.",yes,1.0
-pope_test00751,Is there a sink in the image?,"There is no sink in the image. The image shows a young child sitting on a couch, holding a toothbrush in their mouth.",no,0.0
+pope_test00751,Is there a sink in the image?,"There is no sink in the image. The image shows a young child sitting on a couch, holding a toothbrush in their mouth.",no,1.0
 pope_test00752,Is there a couch in the image?,"Yes, there is a couch in the image. The child is sitting on the couch, and the couch is covered with a blanket.",yes,1.0
-pope_test00753,Is there a chair in the image?,"There is a couch in the image, but no chair is visible.",no,0.0
+pope_test00753,Is there a chair in the image?,"There is a couch in the image, but no chair is visible.",no,1.0
 pope_test00754,Is there a person in the image?,"Yes, there is a person in the image. The person appears to be a young child, likely a toddler, based on their size and the way they are holding a toothbrush in their mouth.",yes,1.0
 pope_test00755,Is there a car in the image?,"No, there is no car in the image. The image shows a young child sitting on a couch, holding a toothbrush in their mouth.",no,1.0
 pope_test00756,Is there a traffic light in the image?,"No, there is no traffic light in the image.",yes,0.0
@@ -1274,7 +1274,7 @@ pope_test01271,Is there a bus in the image?,"Yes, there is a bus in the image. I
 pope_test01272,Is there a spoon in the image?,"No, there is no spoon in the image.",yes,0.0
 pope_test01273,Is there a bowl in the image?,"No, there is no bowl in the image.",no,1.0
 pope_test01274,Is there a dining table in the image?,"Yes, there is a dining table in the image. The table is made of wood and has a brown color. It appears to be outdoors, as evidenced by the chairs in the background.",yes,1.0
-pope_test01275,Is there a person in the image?,There is no person in the image.,no,0.0
+pope_test01275,Is there a person in the image?,There is no person in the image.,no,1.0
 pope_test01276,Is there a knife in the image?,"Yes, there is a knife in the image. It is located on the table behind the plate of food.",yes,1.0
 pope_test01277,Is there a bottle in the image?,"No, there is no bottle in the image.",no,1.0
 pope_test01278,Is there a truck in the image?,"Yes, there are two trucks in the image.",yes,1.0
@@ -1316,7 +1316,7 @@ pope_test01313,Is there a cup in the image?,"Yes, there is a cup on the table ne
 pope_test01314,Is there a laptop in the image?,"Yes, there is a laptop in the image. It is silver and has a white keyboard. It is open and sitting on a wooden table.",yes,1.0
 pope_test01315,Is there a tv in the image?,"No, there is no television in the image. There is a laptop computer on a table.",no,1.0
 pope_test01316,Is there a dining table in the image?,"Yes, there is a dining table in the image. The laptop is sitting on the table.",yes,1.0
-pope_test01317,Is there a person in the image?,There is no person in the image.,no,0.0
+pope_test01317,Is there a person in the image?,There is no person in the image.,no,1.0
 pope_test01318,Is there a chair in the image?,"Yes, there is a chair in the background of the image.",yes,1.0
 pope_test01319,Is there a couch in the image?,"Yes, there is a couch in the background of the image.",no,0.0
 pope_test01320,Is there a chair in the image?,"Yes, there are several chairs in the image.",yes,1.0
@@ -1416,7 +1416,7 @@ pope_test01413,Is there a car in the image?,"Yes, there is a car in the image. I
 pope_test01414,Is there a bench in the image?,"Yes, there is a bench in the image. It is located on the right side of the image and appears to be made of wood.",yes,1.0
 pope_test01415,Is there a backpack in the image?,"Yes, there is a backpack in the image. It is located on the left side of the image, behind the suitcase.",no,0.0
 pope_test01416,Is there a truck in the image?,"Yes, there is a truck in the image. The truck is a dark blue vintage pickup truck with a wooden barrel in the back.",yes,1.0
-pope_test01417,Is there a traffic light in the image?,"There is no traffic light visible in the image. The image appears to be a photograph of a classic car show or event, with several vintage cars parked in a lot, and a large building in the background.",no,0.0
+pope_test01417,Is there a traffic light in the image?,"There is no traffic light visible in the image. The image appears to be a photograph of a classic car show or event, with several vintage cars parked in a lot, and a large building in the background.",no,1.0
 pope_test01418,Is there a car in the image?,"Yes, there are several cars in the image. The main car is a black pickup truck with a wooden barrel in the back. There are other cars in the background.",yes,1.0
 pope_test01419,Is there a bus in the image?,"No, there is no bus in the image. There are several cars, but no buses.",no,1.0
 pope_test01420,Is there a person in the image?,"There are several people in the image, but they are not clearly visible. There are several people standing in the background of the image, but they are not clearly visible.",yes,0.0
@@ -1538,7 +1538,7 @@ pope_test01535,Is there a cup in the image?,"Yes, there is a cup on the table in
 pope_test01536,Is there a sandwich in the image?,"Yes, there is a sandwich in the image. The sandwich is cut in half and appears to be a grilled cheese or panini. It is placed on a plate with a side of Brussels sprouts.",yes,1.0
 pope_test01537,Is there a cup in the image?,"Yes, there is a can of Miller High Life beer in the image.",no,0.0
 pope_test01538,Is there a fork in the image?,"Yes, there is a fork in the image. The fork is located on the right side of the plate, partially visible.",yes,1.0
-pope_test01539,Is there a person in the image?,There is no person in the image.,no,0.0
+pope_test01539,Is there a person in the image?,There is no person in the image.,no,1.0
 pope_test01540,Is there a dining table in the image?,"Yes, there is a red dining table in the image.",yes,1.0
 pope_test01541,Is there a chair in the image?,"Yes, there is a chair in the image. It is red and appears to be made of fabric. It is located in the background of the image, behind the plate of food.",no,0.0
 pope_test01542,Is there a bird in the image?,"Yes, there is a bird in the image. The bird is a Twitter logo on the side of the food truck on the left.",yes,1.0
@@ -1788,7 +1788,7 @@ pope_test01785,Is there a cup in the image?,"Yes, there is a wine glass in the i
 pope_test01786,Is there a couch in the image?,"Yes, there is a couch in the image. It is partially visible behind the man on the left side of the image.",yes,1.0
 pope_test01787,Is there a chair in the image?,"Yes, there is a chair in the image. It is partially visible behind the man on the left side of the image.",no,0.0
 pope_test01788,Is there a truck in the image?,"Yes, there is a truck in the image. It is located on the left side of the image, behind the train.",yes,1.0
-pope_test01789,Is there a person in the image?,There is no person in the image.,no,0.0
+pope_test01789,Is there a person in the image?,There is no person in the image.,no,1.0
 pope_test01790,Is there a train in the image?,"Yes, there is a train in the image. The train is a steam locomotive with the number 71 on the front.",yes,1.0
 pope_test01791,Is there a traffic light in the image?,"Yes, there is a traffic light in the image. It is located on the left side of the train.",no,0.0
 pope_test01792,Is there a car in the image?,"Yes, there is a car in the image. It is located on the left side of the image, behind the train.",yes,1.0
@@ -2060,7 +2060,7 @@ pope_test02057,Is there a dining table in the image?,"Yes, there is a dining tab
 pope_test02058,Is there a dog in the image?,"Yes, there is a dog in the image. The dog is black and appears to be a medium-sized breed. It is running on a grassy field, and it is wearing a pink frisbee around its neck.",yes,1.0
 pope_test02059,Is there a person in the image?,"No, there is no person in the image. The image shows a dog running in a grassy area, with a pink frisbee in its mouth.",no,1.0
 pope_test02060,Is there a truck in the image?,"Yes, there is a white truck in the image. It is parked behind a black iron fence, and it appears to be a work truck.",yes,1.0
-pope_test02061,Is there a traffic light in the image?,"There is no traffic light in the image. However, there is a red light on the back of a white van in the background, which could be a brake light.",no,0.0
+pope_test02061,Is there a traffic light in the image?,"There is no traffic light in the image. However, there is a red light on the back of a white van in the background, which could be a brake light.",no,1.0
 pope_test02062,Is there a car in the image?,"Yes, there are several cars in the image. There are two cars on the left side of the image, one in the middle, and one on the right side.",yes,1.0
 pope_test02063,Is there a bus in the image?,"No, there is no bus in the image. There are cars and a white van in the background, but no bus.",no,1.0
 pope_test02064,Is there a person in the image?,"Yes, there appears to be a person in the image, but they are mostly obscured by the bus.",yes,1.0
@@ -2266,7 +2266,7 @@ pope_test02263,Is there a cow in the image?,"No, there is no cow in the image. T
 pope_test02264,Is there a person in the image?,"Yes, there is a person in the image. The person is wearing a tie and has tattoos on their chest and arm. The person is not fully visible, but they appear to be a man.",yes,1.0
 pope_test02265,Is there a car in the image?,"No, there is no car in the image. The image shows a man's torso with a tie and tattoos.",no,1.0
 pope_test02266,Is there a tie in the image?,"Yes, there is a tie in the image. The tie is black and gold with a camouflage pattern. It is being worn by a man who is shirtless.",yes,1.0
-pope_test02267,Is there a dining table in the image?,"There is no dining table in the image. The image shows a man's torso with a tie, but there is no dining table visible.",no,0.0
+pope_test02267,Is there a dining table in the image?,"There is no dining table in the image. The image shows a man's torso with a tie, but there is no dining table visible.",no,1.0
 pope_test02268,Is there a tv in the image?,"No, there is no television in the image.",yes,0.0
 pope_test02269,Is there a person in the image?,"No, there is no person in the image.",no,1.0
 pope_test02270,Is there a mouse in the image?,"Yes, there is a mouse in the image. The mouse is white and oval-shaped, with a cord attached to it. It is placed on a keyboard, which is also visible in the image.",yes,1.0
@@ -2464,7 +2464,7 @@ pope_test02461,Is there a car in the image?,"No, there is no car in the image.",
 pope_test02462,Is there a bowl in the image?,"No, there is no bowl in the image. There is a baking dish with a yellow oven mitt around it.",yes,0.0
 pope_test02463,Is there a cup in the image?,"Yes, there is a cup on the shelf behind the woman.",no,0.0
 pope_test02464,Is there a bottle in the image?,"Yes, there is a bottle in the image. It is located on the top shelf behind the woman.",yes,1.0
-pope_test02465,Is there a dining table in the image?,"There is no dining table visible in the image. The woman is holding a tray of food, but there is no table or other furniture that would be used for dining.",no,0.0
+pope_test02465,Is there a dining table in the image?,"There is no dining table visible in the image. The woman is holding a tray of food, but there is no table or other furniture that would be used for dining.",no,1.0
 pope_test02466,Is there a car in the image?,"Yes, there are several cars in the image.",yes,1.0
 pope_test02467,Is there a truck in the image?,"No, there are no trucks visible in the image.",no,1.0
 pope_test02468,Is there a traffic light in the image?,"Yes, there are two traffic lights in the image.",yes,1.0
@@ -2512,7 +2512,7 @@ pope_test02509,Is there a person in the image?,"No, there does not appear to be 
 pope_test02510,Is there a car in the image?,"No, there is no car in the image. The image shows a small room with a bed and a window.",yes,0.0
 pope_test02511,Is there a truck in the image?,"No, there is no truck in the image. The image shows a small room with a bed and a window.",no,1.0
 pope_test02512,Is there a bed in the image?,"Yes, there is a bed in the image. The bed is located in a small room with a window and has a white sheet on it.",yes,1.0
-pope_test02513,Is there a book in the image?,"There is no book in the image. There is a bed and a chair, but no books are visible.",no,0.0
+pope_test02513,Is there a book in the image?,"There is no book in the image. There is a bed and a chair, but no books are visible.",no,1.0
 pope_test02514,Is there a truck in the image?,"Yes, there is a white van in the image.",yes,1.0
 pope_test02515,Is there a traffic light in the image?,"No, there is no traffic light in the image.",no,1.0
 pope_test02516,Is there a person in the image?,"Yes, there are several people in the image.",yes,1.0
@@ -2662,7 +2662,7 @@ pope_test02659,Is there a car in the image?,"No, there are no cars in the image.
 pope_test02660,Is there a person in the image?,There does not appear to be a person in the image.,yes,0.0
 pope_test02661,Is there a dining table in the image?,"No, there is no dining table in the image. The image shows a bus parked in a lot with other vehicles.",no,1.0
 pope_test02662,Is there a bus in the image?,"Yes, there is a bus in the image. The bus is white with green and pink accents and has the words ""Flamingo Nukin"" written on the front.",yes,1.0
-pope_test02663,Is there a traffic light in the image?,"There is no traffic light visible in the image. The image shows a bus parked in a lot, with other vehicles around it, but there are no traffic lights or signs of traffic in the background.",no,0.0
+pope_test02663,Is there a traffic light in the image?,"There is no traffic light visible in the image. The image shows a bus parked in a lot, with other vehicles around it, but there are no traffic lights or signs of traffic in the background.",no,1.0
 pope_test02664,Is there a person in the image?,"Yes, there is a person in the image. The person is standing on the sidewalk at night, holding an umbrella.",yes,1.0
 pope_test02665,Is there a dining table in the image?,"No, there is no dining table in the image.",no,1.0
 pope_test02666,Is there a car in the image?,"Yes, there is a car in the image. It is parked on the right side of the image.",yes,1.0
@@ -2918,11 +2918,11 @@ pope_test02913,Is there a chair in the image?,"Yes, there is a chair in the imag
 pope_test02914,Is there a knife in the image?,"Yes, there is a knife in the image. The knife is a pizza server with a wooden handle. It is partially visible in the top right corner of the image.",yes,1.0
 pope_test02915,Is there a spoon in the image?,"Yes, there is a wooden pizza server in the image.",no,0.0
 pope_test02916,Is there a bed in the image?,"Yes, there appears to be a bed in the image. The cat is lying on a blanket that is on top of a bed.",yes,1.0
-pope_test02917,Is there a person in the image?,"There is no person in the image, only a cat.",no,0.0
+pope_test02917,Is there a person in the image?,"There is no person in the image, only a cat.",no,1.0
 pope_test02918,Is there a cat in the image?,"Yes, there is a cat in the image. The cat is black and is wearing a white bow tie.",yes,1.0
 pope_test02919,Is there a couch in the image?,"Yes, there appears to be a couch in the background of the image.",no,0.0
 pope_test02920,Is there a tie in the image?,"No, there is a bow tie in the image.",yes,0.0
-pope_test02921,Is there a dining table in the image?,There is no dining table in the image. The image is a close-up of a black cat wearing a bow tie.,no,0.0
+pope_test02921,Is there a dining table in the image?,There is no dining table in the image. The image is a close-up of a black cat wearing a bow tie.,no,1.0
 pope_test02922,Is there a pizza in the image?,"Yes, there is a slice of pizza on a plate in the image.",yes,1.0
 pope_test02923,Is there a bottle in the image?,"Yes, there is a glass bottle in the image. It is located on the left side of the image and appears to be filled with water.",no,0.0
 pope_test02924,Is there a dining table in the image?,"Yes, there is a dining table in the image. The table is made of wood and has a white plate with a slice of pizza on it.",yes,1.0
@@ -3752,11 +3752,11 @@ pope_test03747,Is there a car in the image?,"No, there is no car in the image.",
 pope_test03748,Is there a vase in the image?,"Yes, there is a vase in the image. The vase is filled with flowers and is located on the table in front of the couple.",yes,1.0
 pope_test03749,Is there a chair in the image?,"No, there does not appear to be a chair in the image.",no,1.0
 pope_test03750,Is there a toothbrush in the image?,"Yes, there is a toothbrush in the image. The child is holding the toothbrush in their right hand and appears to be brushing their teeth.",yes,1.0
-pope_test03751,Is there a dining table in the image?,"There is no dining table in the image. The image shows a child sitting on a couch, holding a toothbrush in their mouth. The background of the image appears to be a living room, with a couch and a cabinet visible. There is no dining table in the image.",no,0.0
+pope_test03751,Is there a dining table in the image?,"There is no dining table in the image. The image shows a child sitting on a couch, holding a toothbrush in their mouth. The background of the image appears to be a living room, with a couch and a cabinet visible. There is no dining table in the image.",no,1.0
 pope_test03752,Is there a couch in the image?,"Yes, there is a couch in the image. The child is sitting on the couch, and the couch is covered with a blanket.",yes,1.0
 pope_test03753,Is there a car in the image?,"No, there is no car in the image. The image shows a young child sitting on a couch, holding a toothbrush in their mouth.",no,1.0
 pope_test03754,Is there a person in the image?,"Yes, there is a person in the image. The person appears to be a young child, likely a toddler, based on their size and the way they are holding a toothbrush in their mouth.",yes,1.0
-pope_test03755,Is there a chair in the image?,"There is a couch in the image, but no chair is visible.",no,0.0
+pope_test03755,Is there a chair in the image?,"There is a couch in the image, but no chair is visible.",no,1.0
 pope_test03756,Is there a traffic light in the image?,"No, there is no traffic light in the image.",yes,0.0
 pope_test03757,Is there a person in the image?,"No, there is no person in the image.",no,1.0
 pope_test03758,Is there a train in the image?,"No, there is no train in the image.",yes,0.0
@@ -4214,7 +4214,7 @@ pope_test04209,Is there a car in the image?,"No, there is no car in the image. T
 pope_test04210,Is there a spoon in the image?,"Yes, there is a spoon in the image. It is being held by a man in the pool, and it appears to be a silver spoon.",yes,1.0
 pope_test04211,Is there a chair in the image?,"No, there does not appear to be a chair in the image. The people in the pool are holding trays with food and drinks on them.",no,1.0
 pope_test04212,Is there a person in the image?,"Yes, there is a person sitting on the bench. There also appears to be a person in a stormtrooper costume standing next to the bench.",yes,1.0
-pope_test04213,Is there a dining table in the image?,"There is no dining table in the image. The image shows a man sitting on a bench at a bus stop, and a stormtrooper standing next to him.",no,0.0
+pope_test04213,Is there a dining table in the image?,"There is no dining table in the image. The image shows a man sitting on a bench at a bus stop, and a stormtrooper standing next to him.",no,1.0
 pope_test04214,Is there a handbag in the image?,"Yes, there is a black handbag on the ground to the left of the man on the bench, and a black handbag on the back of the Storm Trooper.",yes,1.0
 pope_test04215,Is there a car in the image?,"No, there is no car in the image.",no,1.0
 pope_test04216,Is there a suitcase in the image?,"Yes, there is a suitcase in the image. The suitcase is black and appears to be carried by a person dressed as a stormtrooper.",yes,1.0
@@ -4274,7 +4274,7 @@ pope_test04269,Is there a chair in the image?,"No, there is no chair in the imag
 pope_test04270,Is there a bicycle in the image?,"No, there are no bicycles in the image. There are two motorcycles.",yes,0.0
 pope_test04271,Is there a cup in the image?,"No, there is no cup in the image.",no,1.0
 pope_test04272,Is there a spoon in the image?,"No, there is no spoon in the image.",yes,0.0
-pope_test04273,Is there a person in the image?,There is no person in the image.,no,0.0
+pope_test04273,Is there a person in the image?,There is no person in the image.,no,1.0
 pope_test04274,Is there a dining table in the image?,"Yes, there is a dining table in the image. The table is made of wood and has a brown color. It appears to be outdoors, as evidenced by the chairs in the background.",yes,1.0
 pope_test04275,Is there a car in the image?,"No, there is no car in the image.",no,1.0
 pope_test04276,Is there a knife in the image?,"Yes, there is a knife in the image. It is located on the table behind the plate of food.",yes,1.0
@@ -4316,7 +4316,7 @@ pope_test04311,Is there a car in the image?,"No, there is no car in the image.",
 pope_test04312,Is there a dining table in the image?,"Yes, there is a dining table in the image. It is located on the right side of the room, near the door.",yes,1.0
 pope_test04313,Is there a cup in the image?,"Yes, there is a cup on the table next to the chair.",no,0.0
 pope_test04314,Is there a laptop in the image?,"Yes, there is a laptop in the image. It is silver and has a white keyboard. It is open and sitting on a wooden table.",yes,1.0
-pope_test04315,Is there a person in the image?,There is no person in the image.,no,0.0
+pope_test04315,Is there a person in the image?,There is no person in the image.,no,1.0
 pope_test04316,Is there a dining table in the image?,"Yes, there is a dining table in the image. The laptop is sitting on the table.",yes,1.0
 pope_test04317,Is there a car in the image?,"No, there is no car in the image. There is a laptop and a cell phone on a table.",no,1.0
 pope_test04318,Is there a chair in the image?,"Yes, there is a chair in the background of the image.",yes,1.0
@@ -4538,7 +4538,7 @@ pope_test04533,Is there a car in the image?,"Yes, there is a car visible through
 pope_test04534,Is there a bottle in the image?,"Yes, there is a bottle on the table in the image.",yes,1.0
 pope_test04535,Is there a chair in the image?,"Yes, there is a chair in the image. It is located to the left of the bed and appears to be a small, green table with a chair tucked underneath it.",no,0.0
 pope_test04536,Is there a sandwich in the image?,"Yes, there is a sandwich in the image. The sandwich is cut in half and appears to be a grilled cheese or panini. It is placed on a plate with a side of Brussels sprouts.",yes,1.0
-pope_test04537,Is there a person in the image?,There is no person in the image.,no,0.0
+pope_test04537,Is there a person in the image?,There is no person in the image.,no,1.0
 pope_test04538,Is there a fork in the image?,"Yes, there is a fork in the image. The fork is located on the right side of the plate, partially visible.",yes,1.0
 pope_test04539,Is there a car in the image?,"No, there is no car in the image.",no,1.0
 pope_test04540,Is there a dining table in the image?,"Yes, there is a red dining table in the image.",yes,1.0
@@ -4790,7 +4790,7 @@ pope_test04785,Is there a chair in the image?,"Yes, there is a chair in the imag
 pope_test04786,Is there a couch in the image?,"Yes, there is a couch in the image. It is partially visible behind the man on the left side of the image.",yes,1.0
 pope_test04787,Is there a cup in the image?,"Yes, there is a wine glass in the image.",no,0.0
 pope_test04788,Is there a truck in the image?,"Yes, there is a truck in the image. It is located on the left side of the image, behind the train.",yes,1.0
-pope_test04789,Is there a person in the image?,There is no person in the image.,no,0.0
+pope_test04789,Is there a person in the image?,There is no person in the image.,no,1.0
 pope_test04790,Is there a train in the image?,"Yes, there is a train in the image. The train is a steam locomotive with the number 71 on the front.",yes,1.0
 pope_test04791,Is there a dining table in the image?,"No, there is no dining table in the image.",no,1.0
 pope_test04792,Is there a car in the image?,"Yes, there is a car in the image. It is located on the left side of the image, behind the train.",yes,1.0
@@ -5264,11 +5264,11 @@ pope_test05259,Is there a car in the image?,"No, there are no cars visible in th
 pope_test05260,Is there a bicycle in the image?,"Yes, there are several bicycles in the image.",yes,1.0
 pope_test05261,Is there a chair in the image?,"No, there is no chair in the image.",no,1.0
 pope_test05262,Is there a giraffe in the image?,"No, there is no giraffe in the image. The tie in the image appears to be a camouflage tie, which is designed to blend in with its surroundings, but it does not resemble a giraffe.",yes,0.0
-pope_test05263,Is there a dining table in the image?,"There is no dining table in the image. The image shows a man's torso with a tie, but there is no dining table visible.",no,0.0
+pope_test05263,Is there a dining table in the image?,"There is no dining table in the image. The image shows a man's torso with a tie, but there is no dining table visible.",no,1.0
 pope_test05264,Is there a person in the image?,"Yes, there is a person in the image. The person is wearing a tie and has tattoos on their chest and arm. The person is not fully visible, but they appear to be a man.",yes,1.0
 pope_test05265,Is there a car in the image?,"No, there is no car in the image. The image shows a man's torso with a tie and tattoos.",no,1.0
 pope_test05266,Is there a tie in the image?,"Yes, there is a tie in the image. The tie is black and gold with a camouflage pattern. It is being worn by a man who is shirtless.",yes,1.0
-pope_test05267,Is there a chair in the image?,There is no chair in the image. The only thing that is highlighted is a man's tie.,no,0.0
+pope_test05267,Is there a chair in the image?,There is no chair in the image. The only thing that is highlighted is a man's tie.,no,1.0
 pope_test05268,Is there a tv in the image?,"No, there is no television in the image.",yes,0.0
 pope_test05269,Is there a person in the image?,"No, there is no person in the image.",no,1.0
 pope_test05270,Is there a mouse in the image?,"Yes, there is a mouse in the image. The mouse is white and oval-shaped, with a cord attached to it. It is placed on a keyboard, which is also visible in the image.",yes,1.0
@@ -5462,7 +5462,7 @@ pope_test05457,Is there a car in the image?,"No, there are no cars in the image.
 pope_test05458,Is there a boat in the image?,"Yes, there is a boat in the image. It is located on the left side of the image, partially obscured by the two people sitting on the bench.",yes,1.0
 pope_test05459,Is there a chair in the image?,"No, there is a bench in the image.",no,1.0
 pope_test05460,Is there a person in the image?,"Yes, there is a person in the image. The person is a woman with dark hair and a white tank top. She is holding a baking dish with a yellow oven mitt.",yes,1.0
-pope_test05461,Is there a dining table in the image?,"There is no dining table visible in the image. The woman is holding a tray of food, but there is no table or other furniture that would be used for dining.",no,0.0
+pope_test05461,Is there a dining table in the image?,"There is no dining table visible in the image. The woman is holding a tray of food, but there is no table or other furniture that would be used for dining.",no,1.0
 pope_test05462,Is there a bowl in the image?,"No, there is no bowl in the image. There is a baking dish with a yellow oven mitt around it.",yes,0.0
 pope_test05463,Is there a car in the image?,"No, there is no car in the image.",no,1.0
 pope_test05464,Is there a bottle in the image?,"Yes, there is a bottle in the image. It is located on the top shelf behind the woman.",yes,1.0
@@ -5664,7 +5664,7 @@ pope_test05659,Is there a dining table in the image?,"No, there is no dining tab
 pope_test05660,Is there a person in the image?,There does not appear to be a person in the image.,yes,0.0
 pope_test05661,Is there a car in the image?,"No, there are no cars in the image. There are several large trucks visible, but no cars.",no,1.0
 pope_test05662,Is there a bus in the image?,"Yes, there is a bus in the image. The bus is white with green and pink accents and has the words ""Flamingo Nukin"" written on the front.",yes,1.0
-pope_test05663,Is there a chair in the image?,"There does not appear to be a chair visible in the image. The image shows a bus parked in a lot, with other vehicles visible in the background. The bus is white with green and pink accents, and it has a sign on the front that reads ""Flamingo Nukin."" The bus appears to be a standard city bus, with a large windshield and a flat front end. There are no chairs or other furniture visible inside the bus.",no,0.0
+pope_test05663,Is there a chair in the image?,"There does not appear to be a chair visible in the image. The image shows a bus parked in a lot, with other vehicles visible in the background. The bus is white with green and pink accents, and it has a sign on the front that reads ""Flamingo Nukin."" The bus appears to be a standard city bus, with a large windshield and a flat front end. There are no chairs or other furniture visible inside the bus.",no,1.0
 pope_test05664,Is there a person in the image?,"Yes, there is a person in the image. The person is standing on the sidewalk at night, holding an umbrella.",yes,1.0
 pope_test05665,Is there a dining table in the image?,"No, there is no dining table in the image.",no,1.0
 pope_test05666,Is there a car in the image?,"Yes, there is a car in the image. It is parked on the right side of the image.",yes,1.0
@@ -5920,9 +5920,9 @@ pope_test05913,Is there a chair in the image?,"Yes, there is a chair in the imag
 pope_test05914,Is there a knife in the image?,"Yes, there is a knife in the image. The knife is a pizza server with a wooden handle. It is partially visible in the top right corner of the image.",yes,1.0
 pope_test05915,Is there a bottle in the image?,"Yes, there is a glass bottle in the image. The bottle is partially visible behind the pizza and appears to be filled with a dark liquid, likely soda or juice.",no,0.0
 pope_test05916,Is there a bed in the image?,"Yes, there appears to be a bed in the image. The cat is lying on a blanket that is on top of a bed.",yes,1.0
-pope_test05917,Is there a person in the image?,"There is no person in the image, only a cat.",no,0.0
+pope_test05917,Is there a person in the image?,"There is no person in the image, only a cat.",no,1.0
 pope_test05918,Is there a cat in the image?,"Yes, there is a cat in the image. The cat is black and is wearing a white bow tie.",yes,1.0
-pope_test05919,Is there a dining table in the image?,There is no dining table in the image. The image is a close-up of a black cat wearing a bow tie.,no,0.0
+pope_test05919,Is there a dining table in the image?,There is no dining table in the image. The image is a close-up of a black cat wearing a bow tie.,no,1.0
 pope_test05920,Is there a tie in the image?,"No, there is a bow tie in the image.",yes,0.0
 pope_test05921,Is there a car in the image?,"No, there does not appear to be a car in the image. The image is a close-up of a black cat wearing a bow tie.",no,1.0
 pope_test05922,Is there a pizza in the image?,"Yes, there is a slice of pizza on a plate in the image.",yes,1.0
@@ -8924,7 +8924,7 @@ pope_test08915,Is there a tie in the image?,"No, there is no tie in the image.",
 pope_test08916,Is there a bed in the image?,"Yes, there appears to be a bed in the image. The cat is lying on a blanket that is on top of a bed.",yes,1.0
 pope_test08917,Is there a bottle in the image?,"No, there does not appear to be a bottle in the image. There is a hand with a finger visible in the bottom-left corner, but it is not holding a bottle.",no,1.0
 pope_test08918,Is there a cat in the image?,"Yes, there is a cat in the image. The cat is black and is wearing a white bow tie.",yes,1.0
-pope_test08919,Is there a person in the image?,"There is no person in the image, only a cat.",no,0.0
+pope_test08919,Is there a person in the image?,"There is no person in the image, only a cat.",no,1.0
 pope_test08920,Is there a tie in the image?,"No, there is a bow tie in the image.",yes,0.0
 pope_test08921,Is there a surfboard in the image?,"No, there is no surfboard in the image. There is a blanket or towel that is partially visible in the background, but no surfboard.",no,1.0
 pope_test08922,Is there a pizza in the image?,"Yes, there is a slice of pizza on a plate in the image.",yes,1.0

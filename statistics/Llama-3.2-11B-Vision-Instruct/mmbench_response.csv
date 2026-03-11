@@ -1,0 +1,2 @@
+model,dataset,step_score
+Llama-3.2-11B-Vision-Instruct,mmbench_response,0.7796257796257796

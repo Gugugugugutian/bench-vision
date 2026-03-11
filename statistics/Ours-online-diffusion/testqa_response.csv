@@ -1,0 +1,2 @@
+model,dataset,step_score
+Ours-online-diffusion,testqa_response,1.0
