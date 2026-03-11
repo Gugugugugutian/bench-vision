@@ -17,6 +17,7 @@ def load_model(model_path):
 
 def main(args):
     model = load_model(args.model_path)
+    overwrite = os.getenv("OVERWRITE", "").strip().lower() in {"1", "true", "yes"}
     # Create output folder if it doesn't exist
     os.makedirs(args.output_folder, exist_ok=True)
     # Determine the file format to process based on the dataset argument
@@ -27,7 +28,7 @@ def main(args):
         print(f"\033[92m>>> Processing file: {input_file}\033[0m")
         out_path = f"{args.output_folder}/{input_file.split('/')[-1].replace('.jsonl', '_response.csv')}"
         
-        if os.path.exists(out_path):
+        if os.path.exists(out_path) and not overwrite:
             print(f"\033[93m>>> Output file already exists: {out_path}. Skipping...\033[0m")
             continue
         

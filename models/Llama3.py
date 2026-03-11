@@ -36,6 +36,7 @@ class Llama3(BaseModel):
             other_keys_to_keep: list = ['solution', ], 
         ) -> list:
         results = []
+        printed_first_output = False
         for item in tqdm(input_data, desc="Llama3 Predicting"):
             image = None
             if image_key in item and item[image_key]:
@@ -90,6 +91,17 @@ class Llama3(BaseModel):
                     top_p=self.top_p,
                     top_k=self.top_k,
                 )
+
+            if not printed_first_output:
+                tokenized_input = self.processor.tokenizer.convert_ids_to_tokens(
+                    inputs["input_ids"][0]
+                )
+                decoded_output_with_special = self.processor.decode(
+                    output_ids[0], skip_special_tokens=False
+                )
+                print("\n>>> [INPUT]:", tokenized_input)
+                print("\n>>> [OUTPUT]:", decoded_output_with_special.replace("\n", "\\n"), '\n')
+                printed_first_output = True
 
             # Decode only the generated tokens (exclude input tokens)
             generated_ids = output_ids[:, inputs["input_ids"].shape[-1]:]

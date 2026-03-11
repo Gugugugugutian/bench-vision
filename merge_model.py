@@ -23,20 +23,55 @@ print(f"Save path: {save_path}")
 base_model = MllamaForConditionalGeneration.from_pretrained(
     base_model_name,
     torch_dtype=torch.bfloat16,
-    device_map="auto"
+    device_map=None,
 )
 
 # Load LoRA
 model = PeftModel.from_pretrained(base_model, lora_model_name)
 
+# Pre-merge sanity check
+processor = MllamaProcessor.from_pretrained(
+    base_model_name,
+    trust_remote_code=True
+)
+model.eval()
+with torch.no_grad():
+    messages = [
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "Hello"},
+            ],
+        }
+    ]
+    input_text = processor.apply_chat_template(
+        messages, add_generation_prompt=True
+    )
+    inputs = processor(
+        text=input_text,
+        return_tensors="pt",
+    ).to(model.device)
+    output_ids = model.generate(
+        **inputs,
+        do_sample=True,
+        max_new_tokens=32,
+    )
+    gen_ids = output_ids[:, inputs["input_ids"].shape[-1]:]
+    response_text = processor.batch_decode(
+        gen_ids, skip_special_tokens=True
+    )[0].strip()
+    print(f"Pre-merge check output: {response_text}")
+
 # Merge LoRA
 merged_model = model.merge_and_unload()
 
+# Save merged model
 merged_model.save_pretrained(
     save_path,
-    # max_shard_size="5GB"
+    safe_serialization=True
 )
-processor = MllamaProcessor.from_pretrained(base_model_name)
+
+# Save processor
 processor.save_pretrained(save_path)
 
 print(f"Model merged and saved to {save_path}")
