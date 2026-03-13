@@ -2,12 +2,11 @@
 set -e
 
 script_name="$1"
-model_name="$2"
-dataset="$3"
+shift
+script_args=("$@")
 
 echo "Script Name: $script_name"
-echo "Model Path: $model_name"
-echo "Data Path: $data_path"
+echo "Script Args: ${script_args[*]}"
 
 echo "Running script: $script_name"
 sleep 2
@@ -42,7 +41,11 @@ export PIP_TRUSTED_HOST="mirrors.i.h.pjlab.org.cn pypi.i.h.pjlab.org.cn"
 echo "PIP index URLs and trusted hosts have been set."
 
 cd /mnt/shared-storage-user/safevl-share_gpfs/gutian/bench-vision
-conda activate llama32
+if [[ "$script_name" == *"step4"* ]]; then
+    conda activate vlm
+else
+    conda activate llama32
+fi
 
 # Verify the script exists
 if [[ ! -f "$script_name" ]]; then
@@ -52,7 +55,10 @@ fi
 
 echo "============= Running the script with the provided arguments ============="
 echo "Script: $script_name"
-echo "Model Name: $model_name"
-echo "Dataset: $dataset"
+echo "Args: ${script_args[*]}"
 
-bash "$script_name" "$model_name" "$dataset"
+if [[ -f "$script_name" ]]; then
+    bash "$script_name" "${script_args[@]}"
+else
+    bash -lc "$script_name ${script_args[*]}"
+fi

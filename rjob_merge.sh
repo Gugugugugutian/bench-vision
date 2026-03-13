@@ -18,7 +18,7 @@ job_name="merge-$checkpoint"
 
 rjob submit \
   --name=$job_name \
-  --gpu=1 \
+  --gpu=2 \
   --memory=320000 \
   --cpu=32 \
   --charged-group=safevl_gpu \

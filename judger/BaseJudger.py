@@ -70,6 +70,7 @@ class BaseJudger:
             "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13,
             "fourteen": 14, "fifteen": 15, "sixteen": 16,
             "seventeen": 17, "eighteen": 18, "nineteen": 19, "twenty": 20,
+            "none": 0, "nil": 0,
         }
         tokens = self._tokenize(text)
         for t in tokens:
@@ -82,6 +83,66 @@ class BaseJudger:
             return []
         text = str(text).upper()
         letters = re.findall(r"\b[A-J]\b", text)
+        return letters
+
+    def _extract_options(self, question):
+        if question is None:
+            return {}
+        text = str(question)
+        options = {}
+        # Match lines like "A. text" or "1) text"
+        pattern = re.compile(r"(?m)^[ \t]*([A-J]|\d+)[\.)]\s+(.+?)\s*$")
+        for m in pattern.finditer(text):
+            key = m.group(1).strip()
+            val = m.group(2).strip()
+            if key and val:
+                options[key] = val
+        return options
+
+    def _normalize_option_key(self, text):
+        if text is None:
+            return ""
+        t = self._normalize_output(text).strip()
+        if re.fullmatch(r"[A-Ja-j]", t):
+            return t.upper()
+        if re.fullmatch(r"\d+", t):
+            return t
+        return ""
+
+    def _answer_selects_option_key(self, answer, key):
+        if answer is None or not key:
+            return False
+        raw = str(answer).strip()
+        if re.fullmatch(r"\d+", key):
+            return re.search(rf"\b{re.escape(key)}\b", raw) is not None
+        if re.fullmatch(r"[A-J]", key):
+            if re.fullmatch(rf"[{key}{key.lower()}][\.\)]?", raw.strip()):
+                return True
+            raw_l = raw.lower()
+            letter = key.lower()
+            if any(p in raw_l for p in [
+                f"answer is {letter}",
+                f"answer: {letter}",
+                f"answer {letter}",
+                f"option {letter}",
+                f"option: {letter}",
+                f"letter {letter}",
+                f"choice {letter}",
+            ]):
+                return True
+            if re.search(rf"\b(option|answer|letter|choice)\b.*\b{letter}\b", raw_l) and len(raw_l.split()) <= 6:
+                return True
+        return False
+
+    def _extract_letter_tokens(self, text):
+        if text is None:
+            return []
+        raw = str(text)
+        letters = re.findall(r"\b[A-J]\b", raw.upper())
+        # If other alphanumerics exist, treat as not letter-only
+        other = re.sub(r"[A-Ja-j\s,&\.\)\(]", "", raw)
+        if re.search(r"[0-9a-zA-Z]", other):
+            return []
         return letters
 
     def _is_yes_no(self, text):
@@ -161,6 +222,56 @@ class BaseJudger:
             return False
         return sorted(set(sol_letters)) == sorted(set(ans_letters))
 
+    def _match_option_text(self, answer, solution, question):
+        options = self._extract_options(question)
+        if not options:
+            return False
+
+        num_word = {
+            "zero": "0", "one": "1", "two": "2", "three": "3", "four": "4",
+            "five": "5", "six": "6", "seven": "7", "eight": "8", "nine": "9",
+            "ten": "10", "eleven": "11", "twelve": "12", "thirteen": "13",
+            "fourteen": "14", "fifteen": "15", "sixteen": "16",
+            "seventeen": "17", "eighteen": "18", "nineteen": "19", "twenty": "20",
+            "none": "0", "nil": "0",
+        }
+
+        def normalize_num_tokens(tokens):
+            return [num_word.get(t, t) for t in tokens]
+
+        def match_text(target, candidate):
+            tgt_tokens = normalize_num_tokens(self._remove_stopwords(self._tokenize(target)))
+            cand_tokens = normalize_num_tokens(self._remove_stopwords(self._tokenize(candidate)))
+            if not tgt_tokens or not cand_tokens:
+                return False
+            if len(tgt_tokens) <= 2:
+                return all(t in cand_tokens for t in tgt_tokens)
+            return all(t in cand_tokens for t in tgt_tokens)
+
+        sol_key = self._normalize_option_key(solution)
+        ans_key = self._normalize_option_key(answer)
+
+        if sol_key and sol_key in options and self._answer_selects_option_key(answer, sol_key):
+            return True
+
+        if sol_key and sol_key in options:
+            opt_val = options[sol_key].strip()
+            if re.fullmatch(r"[A-Ja-j]", opt_val):
+                if self._answer_selects_option_key(answer, opt_val.upper()):
+                    return True
+            opt_letters = self._extract_letter_tokens(opt_val)
+            ans_letters = self._extract_letter_tokens(answer)
+            if opt_letters and ans_letters and sorted(set(opt_letters)) == sorted(set(ans_letters)):
+                return True
+            return match_text(options[sol_key], answer)
+        if ans_key and ans_key in options:
+            return match_text(options[ans_key], solution)
+
+        for key, text in options.items():
+            if match_text(text, solution) and ans_key == key:
+                return True
+        return False
+
     def _match_contains(self, answer, solution, question=None):
         ans_norm = self._normalize_for_match(answer)
         sol_norm = self._normalize_for_match(solution)
@@ -172,7 +283,15 @@ class BaseJudger:
             if sol_tokens[0] in ans_tokens:
                 return True
             if self._is_ocr_question(question) and len(ans_tokens) == 1:
-                return self._edit_distance_leq1(ans_tokens[0], sol_tokens[0])
+                ans_tok = ans_tokens[0]
+                sol_tok = sol_tokens[0]
+                # Avoid false positives for MCQ option letters (e.g., answer A vs solution C).
+                if re.fullmatch(r"[a-j]", ans_tok) and re.fullmatch(r"[a-j]", sol_tok):
+                    return False
+                # Typos tolerance is only reliable for longer OCR-like tokens.
+                if len(ans_tok) < 3 or len(sol_tok) < 3:
+                    return False
+                return self._edit_distance_leq1(ans_tok, sol_tok)
             return False
         if len(sol_tokens) <= 3:
             return f" {sol_norm} " in f" {ans_norm} "
